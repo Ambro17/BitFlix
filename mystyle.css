@@ -1,0 +1,36 @@
+body {
+	background: black;
+
+}
+.logo {
+	width: 146px;
+	height: 130px;
+}
+.logo-text {
+	color: #00797a;
+	vertical-align: left;
+
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.fade {
+	opacity: 0;
+	background-color: black;
+}
+
+.tile {
+	flex: auto;
+	background-color: red;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+.tile h3, p {
+	color: white;
+	z-index: 10;
+}
