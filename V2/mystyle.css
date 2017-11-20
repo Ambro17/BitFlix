@@ -1,0 +1,60 @@
+body {
+}
+.logo {
+	width: 146px;
+	height: 130px;
+}
+.logo-text {
+	color: #00797a;
+	vertical-align: left;
+
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.flip-container:hover .flipper {
+	transform: rotateY(180deg);
+}
+.front, .back, .flip-container {
+	width: 300px;
+	height: 300px;
+}
+
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.flipper {
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.back {
+	transform: rotateY(180deg);
+	background: white;
+
+}
+
+.fade {
+	opacity: 0;
+	background-color: black;
+}
+
+.tile {
+	flex: auto;
+	background-color: red;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+.tile h3, p {
+	color: white;
+	z-index: 10;
+}
